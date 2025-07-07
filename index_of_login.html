@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-wrapper">
+    <form id="loginForm" class="auth-box">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Login to your Flight Account</p>
+      <input type="email" id="loginEmail" placeholder="Enter email" required />
+      <input type="password" id="loginPassword" placeholder="Enter password" required />
+      <button type="submit">Login</button>
+      <p class="form-link">Don't have an account? <a href="register.html">Register</a></p>
+      <p class="error" id="loginError"></p>
+    </form>
+  </div>
+  <script src="auth.js"></script>
+</body>
+</html>
+
