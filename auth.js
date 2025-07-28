@@ -22,14 +22,14 @@ function validateLogin(email, password) {
 }
 
 // Register Page
-const registerForm = document.getElementById("registerForm");
+const registerForm = document.getElementById("register Form");
 if (registerForm) {
   registerForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("registerEmail").value.trim();
-    const password = document.getElementById("registerPassword").value.trim();
-    const errorBox = document.getElementById("registerError");
+    const email = document.getElementById("register Email").value.trim();
+    const password = document.getElementById("register Password").value.trim();
+    const errorBox = document.getElementById("register Error");
 
     if (password.length < 6) {
       errorBox.textContent = "Password must be at least 6 characters.";
@@ -47,13 +47,13 @@ if (registerForm) {
 }
 
 // Login Page
-const loginForm = document.getElementById("loginForm");
+const loginForm = document.getElementById("login Form");
 if (loginForm) {
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const email = document.getElementById("loginEmail").value.trim();
-    const password = document.getElementById("loginPassword").value.trim();
-    const errorBox = document.getElementById("loginError");
+    const email = document.getElementById("login Email").value.trim();
+    const password = document.getElementById("login Password").value.trim();
+    const errorBox = document.getElementById("login Error");
 
     const user = validateLogin(email, password);
     if (user) {
